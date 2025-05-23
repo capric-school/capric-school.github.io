@@ -1,90 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAPRIC - PAGE TITLE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="CaPriC 2025 Conference" />
+  <meta name="author" content="CaPriC Organizers" />
+
+  <title>CaPriC 2025</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.css" rel="stylesheet" />
+  <link href="css/program.css" rel="stylesheet" />
+
+  <link rel="icon" href="img/CaPriC_logo.png" />
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #f8f9fc;
-      color: #2c3e50;
-      display: flex;
-    }
-    nav {
-      background: #34495e;
-      min-width: 200px;
+    /* Header background image with overlay */
+    .masthead {
+      position: relative;
+      background: url('imgs/capri_landscape.png') no-repeat center center;
+      background-size: cover;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 1rem;
-      position: fixed;
+      padding-top: 70px; /* create space below the navbar */
+
+    }
+  
+    .masthead .overlay {
+      position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 1rem 0;
-      font-weight: bold;
+  
+    .masthead .container {
+      position: relative;
+      z-index: 2;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .main-container {
-      margin-left: 200px;
-      width: calc(100% - 200px);
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    .content {
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    footer {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+  
+    /* Navbar always on front */
+    #mainNav {
+  background-color: #ffffff !important; /* solid white background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for separation */
+  z-index: 1030; /* ensure it stays above content */
+  transition: background-color 0.3s ease;
+}
+
   </style>
+  
 </head>
-<body>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="program.html">Program</a>
-    <a href="contact.html">Contact</a>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-scrolled" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">CaPriC 2025</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#venue">Venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#registration">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#keynotes">Invited Lectures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#program">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#organization">Organizers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active" href="#contacts">Contacts</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
   </nav>
-  <div class="main-container">
-    <header>
-      <h1>CAPRIC</h1>
-      <p>Doctoral School on Cyber-Physical Cloud</p>
-    </header>
-    <main class="content">
-      <!-- Page-specific content goes here -->
-    </main>
-    <footer>
-      <p>&copy; 2025 CAPRIC Doctoral School. All rights reserved.</p>
-    </footer>
-  </div>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 mx-auto">
+          <h1 class="mt-5">CaPriC 2025</h1>
+          <br />
+          <h2>Capri PhD School on Cyber-Physical Cloud</h2>
+          <h2 class="mb-5">Anacapri, Capri Island, Italy</h2>
+          <h2 class="mb-5">October 13-17, 2025</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Introduction Part -->
+  <section class="bg" id="introduction">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4">
+          <img class="img-fluid col-lg-4 rounded mx-auto d-block" src="img/CaPriC_logo.png" alt="CaPriC Logo" />
+          <p class="mt-4 mb-2 text-justify">
+            <p>Welcome to Capri and welcome to the first edition of the PhD School on Cyber-Physical Cloud!
+
+                <p>We live in an era of tremendous transformation, where digital systems are progressively embedded in physical devices adopted in our daily life, from vehicles and household appliances to heavy machinery adopted in industrial automation.</p>
+                    <p>Recently, many industrial and research initiatives are blooming, fostering the adoption of the cloud paradigm and related technologies in cyber-physical systems, to both adhere to stringent size, weight and power requirements, while embracing the pay-per-use model typical of cloud providers. As a side effect, this shift allows to re-purpose in the embedded and real-time the vast expertise available in the cloud domain.</p>
+ 
+                        <p>The PhD School has the objective of teaching both the fundamentals and practical aspects behind the concepts of cloud computing, real-time virtualization, and their application to build next generation cyber-physical cloud systems. </p>
+ 
+                            <p>The school program is characterized by a strong participation of primary industrial experts in industrial manufacturing, telecommunication, and cloud systems, including Ericsson, Bosch, and Digital Ocean, together with primary academic experts in the fields of real-time computing, control, and virtualization.</p>
+ 
+                                <p>With a unique blend of theory and practical hands-on sessions, the school represents a unique opportunity for young PhD scholars to meet experts in the field and to acquire a useful skillset to distinguish their carrier development. </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue -->
+  <section class="bg" id="venue">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4">
+          <h2 class="section-heading">Venue and Accommodation</h2>
+          <p class="mt-4 mb-2 text-justify">
+            The conference will be held at the Grand Hotel Quisisana in Capri, offering breathtaking views and modern
+            facilities. Several hotels and guesthouses nearby provide a variety of accommodation options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section class="bg" id="registration">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4">
+          <h2 class="section-heading">Registration</h2>
+          <p class="mt-4 mb-2 text-justify">
+            Registration for CaPriC 2025 is open! Please visit our registration portal to secure your spot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lectures -->
+  <section class="bg-light" id="keynotes">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4">
+          <h2 class="section-heading">Lectures and Experts</h2>
+          <ul>
+            <li>TBD</li>
+            <li>TBD</li>
+            <li>TBD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section class="bg" id="program">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4">
+          <h2 class="section-heading">Program</h2>
+          <p>
+            The detailed program will be available soon. Expect keynote talks, workshops, paper presentations, and
+            networking events.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizers -->
+  <section class="bg-light" id="organization">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4 text-justify">
+          <h2 class="section-heading">Organizers</h2>
+          <div class="row my-4 mx-auto">
+
+            <div class="col-lg-4 text-center">
+              <a href="#" target="_blank" class="text-dark">
+                <h5>TBD</h5>
+                <p class="font-weight-light mb-0">
+                  TBD
+                </p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 text-center">
+              <a href="#" target="_blank" class="text-dark">
+                <h5>TBD</h5>
+                <p class="font-weight-light mb-0">
+                  TBD
+                </p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 text-center">
+              <a href="#" target="_blank" class="text-dark">
+                <h5>TBD</h5>
+                <p class="font-weight-light mb-0">
+                  TBD
+                </p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="bg" id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto my-4 text-justify">
+          <h2 class="section-heading">Contacts</h2>
+          <p class="mb-0">
+            Email: <a href="mailto:dessert.dieti.unina@gmail.com">dessert.dieti.unina@gmail.com</a><br />
+            Website: <a href="https://capric-school.github.io/" target="_blank">https://capric-school.github.io/</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <small>&copy; 2025 CaPriC. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and JS scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
+
 </html>
