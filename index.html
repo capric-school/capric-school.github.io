@@ -22,6 +22,11 @@
   <link rel="icon" href="imgs/capric_icon.jpg" />
 
   <style>
+    /*
+    body {
+      font-family: 'Atkinson Hyperlegible', sans-serif;
+    }
+    */
     /* Header background image with overlay */
     .masthead {
       position: relative;
@@ -69,8 +74,36 @@
         --bs-text-opacity: 1;
         color: var(--bs-secondary-color) !important;
     }
-    
 
+    /*
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('../fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('../fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('../fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Atkinson Hyperlegible';
+      src: url('../fonts/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
+      font-weight: 700;
+      font-style: italic;
+    }
+    */ 
   </style>
   
 </head>
@@ -120,7 +153,7 @@
         <div class="col-xl-12 mx-auto">
           <h1 class="mt-5">CaPriC 2025</h1>
           <br />
-          <h2>Capri PhD School on Cyber-Physical Cloud</h2>
+          <h2>Capri PhD School on Cyber Physical Cloud</h2>
           <h2 class="mb-5">Anacapri, Capri Island, Italy</h2>
           <h2 class="mb-5">October 13-17, 2025</h2>
         </div>
@@ -136,53 +169,56 @@
           <img class="img-fluid col-lg-4 rounded mx-auto d-block" src="imgs/capric_logo.png" alt="CaPriC Logo" />
           <p class="mt-4 mb-2 text-justify">
             <h4> Description </h4>
-            <p>Welcome to Capri and welcome to the first edition of the PhD School on Cyber-Physical Cloud!
+            <p>Welcome to Capri and welcome to the first edition of the PhD School on Cyber Physical Cloud!
 
             <p>We live in an era of tremendous transformation, where digital systems are progressively embedded in physical devices adopted in our daily life, from vehicles and household appliances to heavy machinery adopted in industrial automation.</p>
             
-            <p>Recently, many industrial and research initiatives are blooming, fostering the adoption of the cloud paradigm and related technologies in cyber-physical systems, to both adhere to stringent size, weight and power requirements, while embracing the pay-per-use model typical of cloud providers. As a side effect, this shift allows to re-purpose in the embedded and real-time the vast expertise available in the cloud domain.</p>
+            <p>Recently, many industrial and research initiatives are blooming, fostering the adoption of the cloud paradigm and related technologies in cyber physical systems, to both adhere to stringent size, weight and power requirements, while embracing the pay-per-use model typical of cloud providers. As a side effect, this shift allows to re-purpose in the embedded and real-time the vast expertise available in the cloud domain.</p>
  
-            <p>The PhD School has the objective of teaching both the fundamentals and practical aspects behind the concepts of cloud computing, real-time virtualization, and their application to build next generation cyber-physical cloud systems. </p>
+            <p>The PhD School has the objective of teaching both the fundamentals and practical aspects behind the concepts of cloud computing, real-time virtualization, and their application to build next generation cyber physical cloud systems. </p>
+
+            <h6>Audience</h6>
+            <p> The PhD school is aimed at master students, PhD students and candidates, early stage researchers and industrial practitioners who want to explore the blend of real-time and cloud computing and their applications on cyber physical systems.</p>
 
             <h4 class="text-xl font-semibold mb-4">Program Overview</h4>
 
-<p class="mb-4">
-  The school program features strong participation from leading industrial partners in manufacturing, telecommunications, and cloud infrastructure—including <strong>Ericsson</strong>, <strong>Bosch</strong>, and <strong>Digital Ocean</strong>—alongside renowned academics in real-time computing, control, and virtualization.
-</p>
+              <p class="mb-4">
+                The school program features strong participation from leading industrial partners in manufacturing, telecommunications, and cloud infrastructure—including <strong>Ericsson</strong>, <strong>Bosch</strong>, and <strong>Digital Ocean</strong>—alongside renowned academics in real-time computing, control, and virtualization.
+              </p>
 
-<p class="mb-6">
-  The curriculum blends academic depth with practical industrial insights, structured around three foundational pillars:
-</p>
+            <p class="mb-6">
+              The curriculum blends academic depth with practical industrial insights, structured around three foundational pillars:
+            </p>
 
-<div class="mb-6">
-  <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Real-Time Computing & Virtualization</h6>
-  <p class="mb-2">Designing predictable, time-sensitive systems through:</p>
-  <ul class="list-disc list-inside ml-4 space-y-1">
-    <li>Real-time operating systems and mixed-criticality scheduling</li>
-    <li>Hardware-assisted virtualization for embedded platforms</li>
-    <li>Timing analysis, system partitioning, and formal verification</li>
-  </ul>
-</div>
+            <div class="mb-6">
+              <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Real-Time Computing & Virtualization</h6>
+              <p class="mb-2">Designing predictable, time-sensitive systems through:</p>
+              <ul class="list-disc list-inside ml-4 space-y-1">
+                <li>Real-time operating systems and mixed-criticality scheduling</li>
+                <li>Hardware-assisted virtualization for embedded platforms</li>
+                <li>Timing analysis, system partitioning, and formal verification</li>
+              </ul>
+            </div>
 
-<div class="mb-6">
-  <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Cloud Computing & Orchestration</h6>
-  <p class="mb-2">Modern distributed architectures across cloud-edge infrastructures, including:</p>
-  <ul class="list-disc list-inside ml-4 space-y-1">
-    <li>Containerization, microservices, and orchestration (e.g., Kubernetes)</li>
-    <li>Edge and fog computing for low-latency applications</li>
-    <li>Secure, scalable deployment strategies for industrial CPS</li>
-  </ul>
-</div>
+            <div class="mb-6">
+              <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Cloud Computing & Orchestration</h6>
+              <p class="mb-2">Modern distributed architectures across cloud-edge infrastructures, including:</p>
+              <ul class="list-disc list-inside ml-4 space-y-1">
+                <li>Containerization, microservices, and orchestration (e.g., Kubernetes)</li>
+                <li>Edge and fog computing for low-latency applications</li>
+                <li>Secure, scalable deployment strategies for industrial CPS</li>
+              </ul>
+            </div>
 
-<div class="mb-6">
-  <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Industrial Use Cases</h6>
-  <p class="mb-2">Real-world applications and challenges in:</p>
-  <ul class="list-disc list-inside ml-4 space-y-1">
-    <li>Automotive, aerospace, robotics, and manufacturing</li>
-    <li>Cyber-physical integration, digital twins, and IoT</li>
-    <li>Standards, safety certification, and innovation ecosystems</li>
-  </ul>
-</div>
+            <div class="mb-6">
+              <h6 class="text-lg font-bold mb-2 text-indigo-700">🔹 Industrial Use Cases</h6>
+              <p class="mb-2">Real-world applications and challenges in:</p>
+              <ul class="list-disc list-inside ml-4 space-y-1">
+                <li>Automotive, aerospace, robotics, and manufacturing</li>
+                <li>Cyberphysical integration, digital twins, and IoT</li>
+                <li>Standards, safety certification, and innovation ecosystems</li>
+              </ul>
+            </div>
 
  
             <p>With a unique blend of theory and practical hands-on sessions, the school represents a unique opportunity for young PhD scholars to meet experts in the field and to acquire a useful skillset to distinguish their carrier development. </p>
