@@ -78,6 +78,12 @@
       text-align: justify;
     }
 
+    .venue-img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+
     /*
     @font-face {
       font-family: 'Atkinson Hyperlegible';
@@ -107,6 +113,12 @@
       font-style: italic;
     }
     */ 
+
+  @media (min-width: 992px) {
+    .custom-modal-desktop {
+      max-width: 50%; /* or set a specific px value like 1000px */
+    }
+  }
   </style>
   
 </head>
@@ -168,7 +180,9 @@
   <section class="bg" id="introduction">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto my-4 justified-text">
+        
+          <div class="col-lg-10 mx-auto my-4 justified-text">
+          
           <img class="img-fluid col-lg-4 rounded mx-auto d-block" src="imgs/capric_logo.png" alt="CaPriC Logo" />
           <p class="mt-4 mb-2 text-justify">
             <h4> Description </h4>
@@ -232,516 +246,635 @@
   </section>
 
   <!-- Venue -->
-  <section class="bg" id="venue">
+  <section class="bg-light" id="venue">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto my-4">
-          <h2 class="section-heading">Venue and Accommodation</h2>
-          <p class="mt-4 mb-2 text-justify">
-            <h5>Centro Congressi Federico II</h5>
-              <p>Villa Orlandi - Anacapri<br>
-                Capri Island, Italy
-          </p>
+        <div class="col-lg-10 mx-auto my-4 text-justify">
+          <h2 class="section-heading mb-4">Venue and Accommodation</h2>
+  
+          <div class="justified-text">
+            <h4 class="mb-2">Centro Congressi Federico II</h4>
+            <p>
+              The school will take place at the historic Villa Orlandi, home to the Centro Congressi Federico II in Anacapri.
+              Located on the beautiful Capri Island in Italy, the venue offers a unique combination of academic inspiration and natural beauty.
+            </p>
+          </div>
+  
+          <!-- Uniform Venue Images -->
+          <div class="row g-3 mt-4">
+            <div class="col-md-6">
+              <img src="imgs/venue/villa_orlandi_1.jpg" alt="Villa Orlandi exterior"
+                   class="img-fluid rounded shadow-sm object-fit-cover venue-img">
+            </div>
+            <div class="col-md-6">
+              <img src="imgs/venue/villa_orlandi_2.jpg" alt="Villa Orlandi garden"
+                   class="img-fluid rounded shadow-sm object-fit-cover venue-img">
+            </div>
+            <div class="col-md-6">
+              <img src="imgs/venue/villa_orlandi_3.jpg" alt="Conference room interior"
+                   class="img-fluid rounded shadow-sm object-fit-cover venue-img">
+            </div>
+            <div class="col-md-6">
+              <img src="imgs/venue/villa_orlandi_4.jpg" alt="Conference room interior"
+                   class="img-fluid rounded shadow-sm object-fit-cover venue-img">
+            </div>
+          </div>
+          
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Registration -->
-  <section class="bg" id="registration">
-    <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto my-4">
-          <h2 class="section-heading">Registration</h2>
+        <div class="col-lg-10 mx-auto my-4 text-justify">
+          <h4 class="section-heading">Application</h4>
           <p class="mt-4 mb-2 text-justify">
-            TBD
+            Please, fill this <a href="capric_application.pdf">form</a> to apply for participating at CaPriC school.
           </p>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-lg-10 mx-auto my-4 text-justify">
+          <h4 class="section-heading">Registration</h4>
+          <p class="mt-4 mb-2 text-justify">
+            <p>The registration fee is <b>350 euros</b> which includes access to the lectures, coffee breaks, lunches, and a social event. <u>Accomodation and Travel are not included</u>.</p>
+            <p>The registration site will be open soon. Stay tuned!!!</p>
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Lecturers and Experts -->
-  <section class="bg-light" id="keynotes">
+  <section class="bg" id="keynotes">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto my-4 text-justify">
-          <h2 class="section-heading">Lecturers and Experts</h2>
+        <div class="col-lg-10 mx-auto my-4 text-justify">
+
+
+          
+          <h2 class="section-heading text-center mb-5">Lecturers and Experts</h2>
           
           <div class="row my-4 mx-auto">
 
-            <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
+            <!-- START FOHLER -->
+            <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+  
               
               <a href="https://eit.rptu.de/fgs/rts/people/gerhard-fohler" target="_blank">
-                
                 <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_fohler.jpeg" alt="Gerhard Fohler" style="width: 200px; height: 200px; object-fit: cover;">
               </a>
+            
               
               <a href="https://eit.rptu.de/fgs/rts/people/gerhard-fohler" target="_blank" class="text-dark text-decoration-none">
-                <h5 class="">Prof. Gerhard Fohler</h5>
-                <p class="font-weight-light mb-0">
-                  Technische Universität Kaiserslautern
-                </p>
+                <h5 class="fw-semibold mb-1">Prof. Gerhard Fohler</h5>
+                <p class="text-muted small mb-3">Technische Universität Kaiserslautern</p>
               </a>
+            
               
-              <a href="" data-bs-toggle="modal" data-bs-target="#intro_real_time" class="text-dark">
-                <p class="font-weight-light mb-0">
-                  Introduction to real-time systems
-                </p>
-              </a>
-
-              <div class="modal fade" id="intro_real_time" tabindex="-1" aria-labelledby="intro_real_timeLabel" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              <div class="border rounded shadow-sm p-3 text-start bg-white">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#intro_real_time" class="text-decoration-none text-dark">
+                  <div class="d-flex align-items-start">
+                    <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                    <div>
+                      <h6 class="fw-semibold mb-1">Introduction to Real-Time Systems</h6>
+                      <p class="mb-0 small text-muted">Understanding time-critical computing in modern embedded applications</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            
+              
+              <div class="modal fade" id="intro_real_time" tabindex="-1" aria-labelledby="intro_real_timeLabel" aria-hidden="true">
+                <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="intro_real_timeLabel">Introduction to real-time systems</h1>
+                      <h1 class="modal-title fs-5" id="intro_real_timeLabel">Introduction to Real-Time Systems</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                      <p class="text-justify">
-                        <b>Abstract.</b> TBD 
+                    <div class="modal-body text-start">
+                      <p>
+                        <b>Abstract.</b> Real-time systems are computer systems that must not only compute correct values but must do so within strict timing constraints. Applications range from aircraft and industrial control to everyday devices like phones and consumer electronics. This lecture outlines the foundational principles of real-time computing, and why simply being "fast on average" is not sufficient for correctness.
                       </p>
-                     <p class="text-justify">
-                     <b>Bio.</b> TBD
-                     </p>
+                      <p>
+                        <b>Bio.</b> Prof. Gerhard Fohler holds the Chair of Real-Time Systems at TU Kaiserslautern. After earning his Dipl. Ing. and Ph.D. with honors under Prof. Hermann Kopetz at TU Vienna, he conducted postdoctoral research at the University of Massachusetts at Amherst. He later served as a full professor in Sweden before joining Kaiserslautern in 2006.
+                      </p>
+                      <p>
+                        His research focuses on embedded and safety-critical systems, particularly flexible scheduling and networked real-time systems. He has coordinated multiple EU projects, contributed to the ARTIST Network of Excellence, and chaired major conferences such as ECRTS. He has served on the executive boards of IEEE real-time systems committees and is an associate editor of Springer's Real-Time Systems Journal. Recognized with the IEEE Technical Committee Award and ECRTS Outstanding Achievements Award, he is a prominent thought leader in the field.
+                      </p>
                     </div>
-
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
-
                   </div>
                 </div>
               </div>
             </div>
-              <!---------->
             
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
               
+              <!-- END FOHLER -->
+            
+              <!--- START SANJOY ----->
+            
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
                 <a href="https://engineering.washu.edu/faculty/Sanjoy-Baruah.html" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_sanjoy.jpeg" alt="Sanjoy Baruah" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+              
+                <!-- Name & Affiliation -->
                 <a href="https://engineering.washu.edu/faculty/Sanjoy-Baruah.html" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Prof. Sanjoy Baruah</h5>
-                  <p class="font-weight-light mb-0">
-                   Washington University in Saint Louis, USA
-                  </p>
+                  <h5 class="fw-semibold mb-1">Prof. Sanjoy Baruah</h5>
+                  <p class="text-muted small mb-3">Washington University in St. Louis, USA</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#sched_virt_res" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Scheduling of virtual resources
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="sched_virt_res" tabindex="-1" aria-labelledby="sched_virt_resLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Talk 1 -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white mb-2">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#sched_virt_res" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Scheduling of Virtual Resources</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Talk 2 -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#multicore_hier_sched" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Multicore and Hierarchical Scheduling</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal: Talk 1 -->
+                <div class="modal fade" id="sched_virt_res" tabindex="-1" aria-labelledby="sched_virt_resLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="sched_virt_resLabel">Scheduling of virtual resources</h1>
+                        <h1 class="modal-title fs-5" id="sched_virt_resLabel">Scheduling of Virtual Resources</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> Prof. Sanjoy Baruah joined Washington University in St. Louis in 2017, following academic positions at UNC Chapel Hill and the University of Vermont. His research spans real-time and safety-critical system design, scheduling theory, distributed computing, and algorithm analysis. He is a Fellow of the IEEE and received the 2014 Outstanding Technical Contributions and Leadership Award from the IEEE Technical Committee on Real-Time Systems.</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
-                <a href="" data-bs-toggle="modal" data-bs-target="#multicore_hier_sched" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Multicore and hierachical scheduling
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="multicore_hier_sched" tabindex="-1" aria-labelledby="multicore_hier_schedLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Modal: Talk 2 -->
+                <div class="modal fade" id="multicore_hier_sched" tabindex="-1" aria-labelledby="multicore_hier_schedLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="multicore_hier_schedLabel">Multicore and hierachical scheduling</h1>
+                        <h1 class="modal-title fs-5" id="multicore_hier_schedLabel">Multicore and Hierarchical Scheduling</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> Prof. Sanjoy Baruah joined Washington University in St. Louis in 2017, following academic positions at UNC Chapel Hill and the University of Vermont. His research spans real-time and safety-critical system design, scheduling theory, distributed computing, and algorithm analysis. He is a Fellow of the IEEE and received the 2014 Outstanding Technical Contributions and Leadership Award from the IEEE Technical Committee on Real-Time Systems.</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
               </div>
               <!-- END SANJOY -->
 
               <!-- START CINQUE -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
-              
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
                 <a href="http://wpage.unina.it/macinque" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_cinque.jpeg" alt="Marcello Cinque" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+              
+                <!-- Name & Affiliation -->
                 <a href="http://wpage.unina.it/macinque" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Prof. Marcello Cinque</h5>
-                  <p class="font-weight-light mb-0">
-                   Università degli Studi di Napoli Federico II, Italy
-                  </p>
+                  <h5 class="fw-semibold mb-1">Prof. Marcello Cinque</h5>
+                  <p class="text-muted small mb-3">Università degli Studi di Napoli Federico II, Italy</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#real_time_virt" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Real-time virtualization and hypervisors
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="real_time_virt" tabindex="-1" aria-labelledby="real_time_virtLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Talk -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#real_time_virt" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Real-time Virtualization and Hypervisors</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="real_time_virt" tabindex="-1" aria-labelledby="real_time_virtLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="real_time_virtLabel">Real-time virtualization and hypervisors</h1>
+                        <h1 class="modal-title fs-5" id="real_time_virtLabel">Real-time Virtualization and Hypervisors</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> Virtualization is at the heart of cloud computing, as it allows to have multiple virtual machines (VMs) sharing the same hardware resources, improving hardware consolidation and utilization efficiency. Containers, as a form of OS-level lightweight virtualization, are widespread used too. But what are the implications for real-time services, on their timeliness and freedom from interferences from multiple VMs and/or containers sharing the same resources? In this lecture we will present the principles of virtualization and hypervisors and the main solutions adopted to deal with real-time constraints, including real-time schedulers in hypervisors, partitioning hypervisors, and real-time containers.</p>
+                        <p><strong>Bio.</strong> Marcello Cinque is Associate Professor at the University of Naples Federico II where he teaches operating systems and real-time systems. He holds a PhD in Computer Engineering earned from University of Naples Federico II in 2006, and he was visiting scholar at the University of Illinois at Urbana-Champaign. His research interests mainly focus on real-time virtualization, dependable computing and failure analysis. He’s co-author of over 100 peer-reviewed papers on these subjects. He is or has been the principal investigator of many funded research projects on dependable and real-time computing. He contributes actively to the research community as program committee chair for several top ranking conferences, including USENIX ATC and IEEE DSN. </p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
+              
               </div>
               <!-- END CINQUE -->
 
 
               <!-- START MIGLIACCIO -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
-              
+
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+                <!-- Profile -->
                 <a href="https://www.linkedin.com/in/armax/" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_migliaccio.jpeg" alt="Armando Migliaccio" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+
                 <a href="https://www.linkedin.com/in/armax/" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Armando Migliaccio</h5>
-                  <p class="font-weight-light mb-0">
-                    DigitalOcean Inc., USA
-                  </p>
+                  <h5 class="fw-semibold mb-1">Armando Migliaccio</h5>
+                  <p class="text-muted small mb-3">Principal Software Engineer at DigitalOcean Inc., USA</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#intro_cloud" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Anatomy of a Cloud Platform: Core Building Blocks Behind Scalable, Elastic, and Distributed Computing
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="intro_cloud" tabindex="-1" aria-labelledby="intro_cloudLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+
+                <!-- Talk 1 -->
+                <div class="border rounded shadow-sm p-3 mb-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#intro_cloud" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Anatomy of a Cloud Platform</h6>
+                        <p class="mb-0 small text-muted">
+                          Core Building Blocks Behind Scalable, Elastic, and Distributed Computing
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Modal 1 -->
+                <div class="modal fade" id="intro_cloud" tabindex="-1" aria-labelledby="intro_cloudLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="intro_cloudLabel">Anatomy of a Cloud Platform: Core Building Blocks Behind Scalable, Elastic, and Distributed Computing</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <b>Abstract.</b> Modern cloud computing platforms—such as DigitalOcean, AWS, GCP, and Azure—have become the foundational infrastructure for a wide spectrum of applications, from web hosting and data analytics to real-time control of cyber-physical systems. But what are the fundamental components that power these platforms, and how do they interact to deliver the cloud’s promises of elasticity, scalability, and availability?
+                        <ul>
+                          <li>Compute Infrastructure (VMs, containers, serverless functions)</li>
+                          <li>Storage Systems (block, object, file storage)</li>
+                          <li>Networking and Load Balancing</li>
+                          <li>Orchestration and Scheduling (Kubernetes)</li>
+                          <li>Identity and Access Management (IAM)</li>
+                          <li>Monitoring and Observability</li>
+                          <li>Cloud APIs and DevOps Tools</li>
+                        </ul>
+                        Using examples from platforms like DigitalOcean, the talk also compares design trade-offs across hyperscalers and discusses real-world deployments.
+
+                        <br><br>
+                        <b>Bio.</b> Armando Migliaccio is a seasoned Principal Software Engineer with 20+ years of experience in open source and cloud systems. At DigitalOcean, he has led compute and networking initiatives. Formerly with SUSE, VMware, Citrix, and OpenStack, he holds a PhD from Università degli Studi di Napoli Federico II.
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
 
-                <a href="" data-bs-toggle="modal" data-bs-target="#comm_cloud" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    From Code to Cloud: A Hands-On Journey Through the Core Building Blocks of Cloud Platforms
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="comm_cloud" tabindex="-1" aria-labelledby="comm_cloudLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+                <!-- Talk 2 -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#comm_cloud" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">From Code to Cloud</h6>
+                        <p class="mb-0 small text-muted">
+                          A Hands-On Journey Through the Core Building Blocks of Cloud Platforms
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="comm_cloud" tabindex="-1" aria-labelledby="comm_cloudLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="comm_cloudLabel">From Code to Cloud: A Hands-On Journey Through the Core Building Blocks of Cloud Platforms</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <b>Abstract.</b> In this interactive hands-on session, participants will learn how to design, deploy, and monitor a real-world cloud-native application using services like:
+                        <ul>
+                          <li>Provisioning VMs and containers</li>
+                          <li>Networking setup (LBs, firewalls, DNS)</li>
+                          <li>Multi-tier app deployment</li>
+                          <li>Kubernetes for scaling and resilience</li>
+                          <li>Logging and observability tools</li>
+                        </ul>
+                        By the end, attendees will deploy a full architecture from scratch. <br><br>
+                        <b>Prerequisites:</b> Basic Linux, Docker, and CLI familiarity.
+
+                        <br><br>
+                        <b>Bio.</b> (Same as above)
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
               </div>
+
               <!-- END MIGLIACCIO -->
 
               <!-- START Eker -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
-              
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
                 <a href="https://www.control.lth.se/personnel/personnel/johan-eker/" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_eker.jpeg" alt="Johan Eker" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+              
+                <!-- Name & Affiliation -->
                 <a href="https://www.control.lth.se/personnel/personnel/johan-eker/" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Prof. Johan Eker</h5>
-                  <p class="font-weight-light mb-0">
-                    Ericsson, Sweden 
-                  </p>
+                  <h5 class="fw-semibold mb-1">Prof. Johan Eker</h5>
+                  <p class="text-muted small mb-3">Ericsson, Sweden</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#openstack" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Openstack & Cloud-native
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="openstack" tabindex="-1" aria-labelledby="openstackLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Talk Title -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#openstack" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Introduction to Cyber Physical Cloud</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="openstack" tabindex="-1" aria-labelledby="openstackLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="openstackLabel">Openstack & Cloud-native</h1>
+                        <h1 class="modal-title fs-5" id="openstackLabel">Introduction to Cyber Physical Cloud</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> TBD</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
+              
               </div>
+              
               <!-- END Eker -->
 
               <!-- START Svensson -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
-              
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
                 <a href="https://www.linkedin.com/in/svenssonweb/" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_svensson.jpeg" alt="Fredrik Svensson" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+              
+                <!-- Name & Affiliation -->
                 <a href="https://www.linkedin.com/in/svenssonweb/" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Fredrik Svensson</h5>
-                  <p class="font-weight-light mb-0">
-                    Ericsson, Sweden 
-                  </p>
+                  <h5 class="fw-semibold mb-1">Fredrik Svensson</h5>
+                  <p class="text-muted small mb-3">Software Architect at Ericsson, Sweden</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#k8s" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Kubernetes and RT-K8S
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="k8s" tabindex="-1" aria-labelledby="k8sLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Talk Title -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#k8s" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Kubernetes and RT-K8S</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="k8s" tabindex="-1" aria-labelledby="k8sLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="k8sLabel">Kubernetes and RT-K8S</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> TBD</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
+              
               </div>
               <!-- END Svensson -->
 
 
               <!-- START Arne Hamann -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
-              
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
                 <a href="https://www.linkedin.com/in/arne-hamann-9045181" target="_blank">
                   <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_hamann.jpeg" alt="Arne Hamann" style="width: 200px; height: 200px; object-fit: cover;">
                 </a>
-                
+              
+                <!-- Name & Affiliation -->
                 <a href="https://www.linkedin.com/in/arne-hamann-9045181" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Arne Hamann</h5>
-                  <p class="font-weight-light mb-0">
-                    Bosch, Germany
-                  </p>
+                  <h5 class="fw-semibold mb-1">Arne Hamann</h5>
+                  <p class="text-muted small mb-3">Head of "Advanced Solutions for Intelligent Systems", Chief Expert "Distributed Intelligent Systems" at Bosch, Germany</p>
                 </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#i40" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    I4.0
-                  </p>
-                </a>
-
-                <a href="" data-bs-toggle="modal" data-bs-target="#future_use_case" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Future use cases
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="i40" tabindex="-1" aria-labelledby="i40Label" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+              
+                <!-- Talk: I4.0 -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white mb-2">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#i40" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">I4.0</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Talk: Future use cases -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#future_use_case" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Future use cases</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal: I4.0 -->
+                <div class="modal fade" id="i40" tabindex="-1" aria-labelledby="i40Label" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="i40Label">I4.0</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> Arne Hamann works as Chief Expert for the development of distributed intelligent systems. Like the Bosch product portfolio, his work spans embedded systems with strong hardware-software interaction to edge/cloud-based IoT systems.</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
-              </div>
-              <!-- END Arne Hamann -->
-
-              <!-- START Karl-Erik Årzen -->
-              <div class="col-lg-4 text-center" style="padding-bottom: 10px;">
               
-                <a href="https://portal.research.lu.se/en/persons/karl-erik-%C3%A5rz%C3%A9n" target="_blank">
-                  <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_arzen.jpeg" alt="Karl-Erik Årzen" style="width: 200px; height: 200px; object-fit: cover;">
-                </a>
-                
-                <a href="https://portal.research.lu.se/en/persons/karl-erik-%C3%A5rz%C3%A9n" target="_blank" class="text-dark text-decoration-none">
-                  <h5 class="">Karl-Erik Årzen</h5>
-                  <p class="font-weight-light mb-0">
-                    University Lund, Sweden
-                  </p>
-                </a>
-                
-                <a href="" data-bs-toggle="modal" data-bs-target="#control_cloud" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Control over the cloud
-                  </p>
-                </a>
-                
-  
-                <div class="modal fade" id="control_cloud" tabindex="-1" aria-labelledby="control_cloudLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="control_cloudLabel">Control over the cloud</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
-                      </div>
-  
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-  
-                    </div>
-                  </div>
-                </div>
-
-                <a href="" data-bs-toggle="modal" data-bs-target="#future_use_case" class="text-dark">
-                  <p class="font-weight-light mb-0">
-                    Future use cases
-                  </p>
-                </a>
-  
-                <div class="modal fade" id="future_use_case" tabindex="-1" aria-labelledby="future_use_caseLabel" style="display: none;" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog modal-dialog-scrollable">
+                <!-- Modal: Future use cases -->
+                <div class="modal fade" id="future_use_case" tabindex="-1" aria-labelledby="future_use_caseLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h1 class="modal-title fs-5" id="future_use_caseLabel">Future use cases</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p class="text-justify">
-                          <b>Abstract.</b> TBD 
-                        </p>
-                       <p class="text-justify">
-                       <b>Bio.</b> TBD
-                       </p>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> Arne Hamann works as Chief Expert for the development of distributed intelligent systems. Like the Bosch product portfolio, his work spans embedded systems with strong hardware-software interaction to edge/cloud-based IoT systems.</p>
                       </div>
-  
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                       </div>
-  
                     </div>
                   </div>
                 </div>
-
+              
               </div>
               <!-- END Arne Hamann -->
+
+              <!-- START Karl-Erik Årzen -->
+              <div class="col-lg-4 text-center" style="padding-bottom: 20px;">
+
+                <!-- Profile Image -->
+                <a href="https://portal.research.lu.se/en/persons/karl-erik-%C3%A5rz%C3%A9n" target="_blank">
+                  <img class="img-fluid rounded-circle mb-3" src="imgs/lecturers/foto_arzen.jpeg" alt="Karl-Erik Årzen" style="width: 200px; height: 200px; object-fit: cover;">
+                </a>
+              
+                <!-- Name & Affiliation -->
+                <a href="https://portal.research.lu.se/en/persons/karl-erik-%C3%A5rz%C3%A9n" target="_blank" class="text-dark text-decoration-none">
+                  <h5 class="fw-semibold mb-1">Prof. Karl-Erik Årzen</h5>
+                  <p class="text-muted small mb-3">Lund University, Sweden</p>
+                </a>
+              
+                <!-- Talk: Control over the cloud -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white mb-2">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#control_cloud" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Control over the cloud</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Talk: Future use cases -->
+                <div class="border rounded shadow-sm p-3 text-start bg-white">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#future_use_case_2" class="text-decoration-none text-dark">
+                    <div class="d-flex align-items-start">
+                      <i class="fas fa-chalkboard-teacher fa-lg text-primary me-3 mt-1"></i>
+                      <div>
+                        <h6 class="fw-semibold mb-1">Future use cases</h6>
+                        <p class="mb-0 small text-muted"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              
+                <!-- Modal: Control over the cloud -->
+                <div class="modal fade" id="control_cloud" tabindex="-1" aria-labelledby="control_cloudLabel" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="control_cloudLabel">Control over the cloud</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> TBD</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Modal: Future use cases -->
+                <div class="modal fade" id="future_use_case_2" tabindex="-1" aria-labelledby="future_use_case_2Label" aria-hidden="true">
+                  <div class="modal-dialog custom-modal-desktop modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="future_use_case_2Label">Future use cases</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-start">
+                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Bio.</strong> TBD</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+                            
+              <!-- END Karl-Erik Årzen -->
+            
 
 
           </div> <!-- end row -->
@@ -752,7 +885,7 @@
   </section>
 
   <!-- Program -->
-  <section class="bg" id="program">
+  <section class="bg-light" id="program">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto my-4 text-justify"> 
@@ -818,7 +951,7 @@
 	                14:00- 15:30
 	                
 	              </td>
-	              <td><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Cloud 1: Johan Eker (Ericsson) <br> <i>Introduction to Cloud: Openstack & Cloud-native </i></td>
+	              <td><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Cloud 1: Johan Eker (Ericsson) <br> <i>Introdution to Cyber Physical Cloud</i></td>
 	            </tr>
 
 	            
@@ -1088,7 +1221,7 @@
   </section>
 
   <!-- Organizers -->
-  <section class="bg-light" id="organization">
+  <section class="bg" id="organization">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto my-4 text-justify">
@@ -1143,7 +1276,7 @@
   
 
   <!-- Contacts -->
-  <section class="bg" id="contacts">
+  <section class="bg-light" id="contacts">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto my-4 text-justify">
@@ -1158,7 +1291,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light py-4">
+  <footer class="bg py-4">
     <div class="container text-center">
       <small>&copy; 2025 CaPriC. All Rights Reserved.</small>
     </div>
