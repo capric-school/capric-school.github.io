@@ -120,6 +120,22 @@
       max-width: 50%; /* or set a specific px value like 1000px */
     }
   }
+
+.logo-box {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
   </style>
   
 </head>
@@ -1282,6 +1298,41 @@
   </section>
   
   
+  <section class="bg-light" id="sponsors">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto my-4 text-justify">
+        <h2 class="section-heading">Organized by</h2>
+        
+        <div class="d-flex align-items-center my-3">
+        <a href="https://www.critiware.com/" class="logo-box">
+          <img src="imgs/sponsors/logo-critiware.png" alt="CRITIWARE Logo" class="sponsor-logo">
+        </a>
+
+        <span class="mx-3">on behalf of</span>
+
+        <a href="https://dessert.unina.it" class="logo-box">
+          <img src="imgs/sponsors/dessert_logo.png" alt="DESSERT group." class="sponsor-logo">
+        </a>
+      </div>      
+
+        <h2 class="section-heading">Financial Support by</h2>
+        <div class="row my-3 mx-auto">
+          <a href="https://www.unina.it" class="logo-box">
+            <img src="imgs/sponsors/unina_logo.svg" alt="UNINA Logo" class="sponsor-logo">
+          </a>
+          <a href="https://www.dieti.unina.it" class="logo-box">
+            <img src="imgs/sponsors/dieti_logo.png" alt="DIETI Logo" class="sponsor-logo">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
   
 
   <!-- Contacts -->
@@ -1298,6 +1349,9 @@
       </div>
     </div>
   </section>
+
+
+
 
   <!-- Footer -->
   <footer class="bg py-4">
