@@ -1018,8 +1018,8 @@ We call this next generation cloud the cyber-physical cloud, which blends cloud 
                   <div>Tuesday</div>
                   <div class="shortdate text-muted">October, 2024</div>
                   
-                  <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
-                  <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Room Sala Conferenze</a></div>
+                  <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
+                  <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Room Sala Conferenze</a></div>
                   
                 <p></p>
               </td>
@@ -1083,8 +1083,8 @@ We call this next generation cloud the cyber-physical cloud, which blends cloud 
                           <div>Wednesday</div>
                           <div class="shortdate text-muted">October, 2024</div>
                           
-                          <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
-                          <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Room Sala Conferenze</a></div>
+                          <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
+                          <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Room Sala Conferenze</a></div>
                           
                         <p></p>
                       </td>
@@ -1150,8 +1150,8 @@ Industrial Distributed Applications</i> </td>
                         <div>Thursday</div>
                         <div class="shortdate text-muted">October, 2024</div>
                         
-                        <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
-                        <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Room Sala Conferenze</a></div>
+                        <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
+                        <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Room Sala Conferenze</a></div>
                         
                       <p></p>
                     </td>
@@ -1216,8 +1216,8 @@ Industrial Distributed Applications</i> </td>
                       <div>Friday</div>
                       <div class="shortdate text-muted">October, 2024</div>
                       
-                      <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
-                      <div class="shortdate text-muted"><br><a href="TBD" target="_blank" class="">Room Sala Conferenze</a></div>
+                      <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Centro Congressi Federico II - Villa Orlandi</a></div>
+                      <div class="shortdate text-muted"><br><a href="https://maps.app.goo.gl/eQ7scJCF8FjaEeJe7" target="_blank" class="">Room Sala Conferenze</a></div>
                       
                     <p></p>
                   </td>
@@ -1388,6 +1388,22 @@ Industrial Distributed Applications</i> </td>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse && navbarCollapse.classList.contains('show')) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+  </script>
+
   
 </body>
 
