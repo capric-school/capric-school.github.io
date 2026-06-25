@@ -487,7 +487,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body text-start">
-                        <p><strong>Abstract.</strong> TBD</p>
+                        <p><strong>Abstract.</strong> This lab explores how Linux can be adapted for real-time applications through PREEMPT_RT, real-time schedulers, and CPU isolation.
+It first presents the main sources of non-determinism in standard Linux kernels and explains how PREEMPT_RT improves predictability by making the kernel more preemptible, replacing spinlocks with priority-inheritance RT-mutexes, and moving interrupt handlers into schedulable threads. These concepts are then applied in a hands-on session by measuring latency with cyclictest, experimenting with SCHED_FIFO, SCHED_RR, and SCHED_DEADLINE, stressing the system with stress-ng, and configuring isolated CPUs.</p>
                         <p><strong>Bio.</strong> Raffaele Della Corte is an Assistant Professor (tenure-track) within the  Department of Electrical Engineering and Information Technologies at the University of Naples Federico II. He received the Ph.D. in Computer Engineering from the same institution in 2016. His research interests encompass data-driven failure analysis, online monitoring of software systems, and real-time computing. He is co-author of several peer-reviewed papers on these topics. He is involved in the Program Committee of several top-ranking conferences, including IEEE ISSRE and IEEE ICWS, and he served as an invited reviewer in many high-ranked journals, such as IEEE TSC and IEEE TSE. He has been principal investigator/research member in several research/industrial funded projects focused on the analysis and monitoring of critical systems. </p>
                       </div>
                       <div class="modal-footer">
